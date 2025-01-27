@@ -3,8 +3,6 @@ let p1 = [600,150]
 let p2 = [900,150]
 let p3 = [1000,450]
 let t = 0.5
-//let lineTX = []
-//let lineTY = []
 
 function setup() {
     createCanvas(1900, 900);
@@ -68,19 +66,12 @@ function setup() {
     line(p0[0],p0[1],p1[0],p1[1])
     line(p1[0],p1[1],p2[0],p2[1])
     line(p2[0],p2[1],p3[0],p3[1])
-
-    lineTX.push([cx,cy])
+    
     if(t<1){
       t += 0.01
     }
     if(t>1){
       t = 0      
-    }
-
-    for(let i = 0;i < lineTX-length;i++){
-      lineTX.push(cx)
-      lineTY.push(cy)
-      circle(lineTX[t],lineTY[t],10)
     }
 
   }
