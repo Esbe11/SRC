@@ -74,7 +74,7 @@ function setup() {
       t = 0      
     }
 
-    for(let i = 0;i < 1;i += 0.01){
+    for(let i = 0;i < 1;i += 0.005){
       let a1x = lerp(p0[0],p1[0],i)
       let a1y = lerp(p0[1],p1[1],i)
       let a1x1 = lerp(p1[0],p2[0],i)
