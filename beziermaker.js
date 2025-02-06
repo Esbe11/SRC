@@ -74,4 +74,21 @@ function setup() {
       t = 0      
     }
 
+    for(let i = 0;i < 1;i += 0.01){
+      let a1x = lerp(p0[0],p1[0],i)
+      let a1y = lerp(p0[1],p1[1],i)
+      let a1x1 = lerp(p1[0],p2[0],i)
+      let a1y1 = lerp(p1[1],p2[1],i)
+      let a1x2 = lerp(p2[0],p3[0],i)
+      let a1y2 = lerp(p2[1],p3[1],i)
+      let b1x = lerp(a1x,a1x1,i)
+      let b1y = lerp(a1y,a1y1,i)
+      let b1x1 = lerp(a1x1,a1x2,i)
+      let b1y1 = lerp(a1y1,a1y2,i)
+      let c1x = lerp(b1x,b1x1,i)
+      let c1y = lerp(b1y,b1y1,i)
+
+      circle(c1x,c1y,10)
+    }
+
   }
