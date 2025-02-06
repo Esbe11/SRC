@@ -60,20 +60,6 @@ function setup() {
     let cx = lerp(bx,bx1,t)
     let cy = lerp(by,by1,t)
 
-    fill(255,0,0)
-    circle(cx,cy,10)
-
-    line(p0[0],p0[1],p1[0],p1[1])
-    line(p1[0],p1[1],p2[0],p2[1])
-    line(p2[0],p2[1],p3[0],p3[1])
-    
-    if(t<1){
-      t += 0.01
-    }
-    if(t>1){
-      t = 0      
-    }
-
     for(let i = 0;i < 1;i += 0.005){
       let a1x = lerp(p0[0],p1[0],i)
       let a1y = lerp(p0[1],p1[1],i)
@@ -87,8 +73,22 @@ function setup() {
       let b1y1 = lerp(a1y1,a1y2,i)
       let c1x = lerp(b1x,b1x1,i)
       let c1y = lerp(b1y,b1y1,i)
+      fill(0,0,150)
+      circle(c1x,c1y,5)
+    }
 
-      circle(c1x,c1y,10)
+    fill(255,0,0)
+    circle(cx,cy,10)
+
+    line(p0[0],p0[1],p1[0],p1[1])
+    line(p1[0],p1[1],p2[0],p2[1])
+    line(p2[0],p2[1],p3[0],p3[1])
+    
+    if(t<1){
+      t += 0.01
+    }
+    if(t>1){
+      t = 0      
     }
 
   }
