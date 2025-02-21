@@ -128,7 +128,30 @@ function setup() {
       line(ax,ay,ax1,ay1)
       line(ax1,ay1,ax2,ay2)
     }
-    
+    if(t1<1&&t1>0.0001){
+      circle(a1x,a1y,10)
+      circle(a1x1,a1y1,10)
+      circle(a1x2,a1y2,10)
+
+      line(a1x,a1y,a1x1,a1y1)
+      line(a1x1,a1y1,a1x2,a1y2)
+    }
+    if(t2<1&&t2>0.0001){
+      circle(a2x,a2y,10)
+      circle(a2x1,a2y1,10)
+      circle(a2x2,a2y2,10)
+
+      line(a2x,a2y,a2x1,a2y1)
+      line(a2x1,a2y1,a2x2,a2y2)
+    }
+    if(t3<1&&t3>0.0001){
+      circle(a3x,a3y,10)
+      circle(a3x1,a3y1,10)
+      circle(a3x2,a3y2,10)
+
+      line(a3x,a3y,a3x1,a3y1)
+      line(a3x1,a3y1,a3x2,a3y2)
+    }
 
     let bx = lerp(ax,ax1,t)
     let by = lerp(ay,ay1,t)
@@ -158,7 +181,24 @@ function setup() {
 
       line(bx,by,bx1,by1)
     }
-    
+    if(t1<1&&t1>0.0001){
+      circle(b1x,b1y,10)
+      circle(b1x1,b1y1,10)
+
+      line(b1x,b1y,b1x1,b1y1)
+    }
+    if(t2<1&&t2>0.0001){
+      circle(b2x,b2y,10)
+      circle(b2x1,b2y1,10)
+
+      line(b2x,b2y,b2x1,b2y1)
+    }
+    if(t3<1&&t3>0.0001){
+      circle(b3x,b3y,10)
+      circle(b3x1,b3y1,10)
+
+      line(b3x,b3y,b3x1,b3y1)
+    }
 
     let cx = lerp(bx,bx1,t)
     let cy = lerp(by,by1,t)
